@@ -1,0 +1,161 @@
+@use 'element-plus/theme-chalk/dark/css-vars.css' as *;
+
+html.dark > body,
+html.dark > body[class*='vab-theme-'] {
+  --el-color-black: #ffffff;
+  --el-color-white: #1d1e1f;
+  --el-color-grey: #ffffff;
+  --el-menu-background-color-second: #1d1e1f;
+  --el-border-color: #414243;
+  --el-menu-background-color: #1d1e1f;
+  --el-mask-color: rgba(0, 0, 0, 0.8);
+  --el-background-color: #1d1e1f;
+
+  --w-e-textarea-bg-color: #333;
+  --w-e-textarea-color: #fff;
+  --w-e-textarea-border-color: var(--el-border-color);
+  --w-e-textarea-slight-border-color: var(--el-border-color);
+  --w-e-textarea-slight-color: var(--el-border-color);
+  --w-e-textarea-slight-bg-color: var(--el-border-color);
+  --w-e-textarea-selected-border-color: var(--el-color-primary);
+  --w-e-textarea-handler-bg-color: var(--el-color-primary);
+  --w-e-toolbar-color: #fff;
+  --w-e-toolbar-bg-color: #333;
+  --w-e-toolbar-active-color: #fff;
+  --w-e-toolbar-active-bg-color: #333;
+  --w-e-toolbar-disabled-color: #999;
+  --w-e-toolbar-border-color: #333;
+  --w-e-modal-button-bg-color: #333;
+  --w-e-modal-button-border-color: #d9d9d9;
+
+  color: #ffffff !important;
+  background-color: var(--el-color-white) !important;
+
+  .vab-nav {
+    background: var(--el-color-white) !important;
+  }
+
+  [class*='-container'],
+  .no-background-container {
+    background: var(--el-color-white) !important;
+  }
+
+  .table {
+    td {
+      border: 1px solid var(--el-border-color) !important;
+    }
+  }
+
+  .login-container .login-form {
+    background: rgba(#1d1e1f, 0.9);
+  }
+
+  .vab-column-bar {
+    margin-left: -1px !important;
+    border-right: 1px solid var(--el-border-color) !important;
+
+    .el-tabs {
+      border-right: 1px solid var(--el-border-color) !important;
+
+      .el-tabs__nav {
+        background: var(--el-color-white) !important;
+      }
+
+      .el-tabs__item {
+        color: var(--el-color-grey) !important;
+      }
+    }
+
+    &-arrow {
+      .el-tabs {
+        .el-tabs__item {
+          &.is-active {
+            color: var(--el-menu-color-text) !important;
+            background: transparent !important;
+
+            .vab-column-grid {
+              background: transparent !important;
+
+              &:after {
+                border-color: transparent var(--el-menu-color-text) transparent transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .vab-tabs-content-card {
+    .el-tabs__header {
+      .el-tabs__item {
+        border: 1px solid var(--el-border-color) !important;
+      }
+    }
+  }
+
+  .vab-logo-column {
+    .logo {
+      background: var(--el-color-white) !important;
+      border-right: 1px solid var(--el-border-color) !important;
+    }
+  }
+
+  .vab-side-bar {
+    border-right: 1px solid var(--el-border-color) !important;
+  }
+
+  .vab-header {
+    border-bottom: 1px solid var(--el-border-color) !important;
+
+    .vab-logo-horizontal {
+      height: calc(var(--el-header-height) - 2px);
+    }
+
+    .vab-main {
+      .right-panel {
+        [class*='ri-'],
+        .username {
+          color: var(--el-color-grey) !important;
+        }
+      }
+    }
+  }
+
+  /* svg */
+  [fill='#fff'] {
+    fill: var(--el-color-white) !important;
+  }
+
+  .el-button,
+  .el-switch,
+  .el-checkbox,
+  .el-checkbox-group,
+  .el-radio,
+  .el-radio-group,
+  .el-slider,
+  .el-tag,
+  .el-pagination,
+  .el-segmented,
+  .el-carousel,
+  .el-menu,
+  .el-card__body::after,
+  .el-alert.is-dark,
+  .el-badge,
+  .fold-unfold,
+  .schedule-box,
+  .vab-theme-setting div a:hover,
+  .transition-box,
+  .top-card-blue,
+  .icon-panel {
+    --el-color-white: var(--el-menu-text-color);
+  }
+
+  .el-divider__text {
+    background-color: transparent !important;
+  }
+
+  .vab-blockquote {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+}

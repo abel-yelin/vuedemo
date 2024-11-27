@@ -1,0 +1,154 @@
+@use './variables' as *;
+
+:root {
+  //背景色
+  --el-background-color: #f6f8f9;
+  //菜单背景色
+  --el-menu-background-color: #282c34;
+  //分栏布局右侧菜单背景色
+  --el-menu-background-color-second: #ffffff;
+  //菜单文字颜色
+  --el-menu-color-text: #ffffff;
+  //菜单item高度
+  --el-menu-item-height: 50px;
+  //横向菜单sub-item高度
+  --el-menu-horizontal-sub-item-height: calc(var(--el-menu-item-height) - 8px);
+  // 浅黑色
+  --el-color-grey: rgba(0, 0, 0, 0.65);
+  //黑色
+  --el-color-black: rgba(0, 0, 0, 0.75);
+  // primary颜色
+  --el-color-primary: #4e88f3;
+  --el-color-primary-light-1: #{$vab-color-primary-light-1};
+  --el-color-primary-light-2: #{$vab-color-primary-light-2};
+  --el-color-primary-light-3: #{$vab-color-primary-light-3};
+  --el-color-primary-light-4: #{$vab-color-primary-light-4};
+  --el-color-primary-light-5: #{$vab-color-primary-light-5};
+  --el-color-primary-light-6: #{$vab-color-primary-light-6};
+  --el-color-primary-light-7: #{$vab-color-primary-light-7};
+  --el-color-primary-light-8: #{$vab-color-primary-light-8};
+  --el-color-primary-light-9: #{$vab-color-primary-light-9};
+  --el-color-primary-dark-2: #{$vab-color-primary};
+  // success颜色
+  --el-color-success: #{$vab-color-success};
+  --el-color-success-light: #{$vab-color-success-light};
+  --el-color-success-lighter: #{$vab-color-success-lighter};
+  --el-color-success-light-1: #{$vab-color-success-light-1};
+  --el-color-success-light-2: #{$vab-color-success-light-2};
+  --el-color-success-light-3: #{$vab-color-success-light-3};
+  --el-color-success-light-4: #{$vab-color-success-light-4};
+  --el-color-success-light-5: #{$vab-color-success-light-5};
+  --el-color-success-light-6: #{$vab-color-success-light-6};
+  --el-color-success-light-7: #{$vab-color-success-light-7};
+  --el-color-success-light-8: #{$vab-color-success-light-8};
+  --el-color-success-light-9: #{$vab-color-success-light-9};
+  --el-color-success-dark-2: #{$vab-color-success};
+  //warning颜色
+  --el-color-warning: #{$vab-color-warning};
+  --el-color-warning-light: #{$vab-color-warning-light};
+  --el-color-warning-lighter: #{$vab-color-warning-lighter};
+  --el-color-warning-light-1: #{$vab-color-warning-light-1};
+  --el-color-warning-light-2: #{$vab-color-warning-light-2};
+  --el-color-warning-light-3: #{$vab-color-warning-light-3};
+  --el-color-warning-light-4: #{$vab-color-warning-light-4};
+  --el-color-warning-light-5: #{$vab-color-warning-light-5};
+  --el-color-warning-light-6: #{$vab-color-warning-light-6};
+  --el-color-warning-light-7: #{$vab-color-warning-light-7};
+  --el-color-warning-light-8: #{$vab-color-warning-light-8};
+  --el-color-warning-light-9: #{$vab-color-warning-light-9};
+  --el-color-warning-dark-2: #{$vab-color-warning};
+  //danger颜色
+  --el-color-danger: #{$vab-color-danger};
+  --el-color-danger-light: #{$vab-color-danger-light};
+  --el-color-danger-lighter: #{$vab-color-danger-lighter};
+  --el-color-danger-light-1: #{$vab-color-danger-light-1};
+  --el-color-danger-light-2: #{$vab-color-danger-light-2};
+  --el-color-danger-light-3: #{$vab-color-danger-light-3};
+  --el-color-danger-light-4: #{$vab-color-danger-light-4};
+  --el-color-danger-light-5: #{$vab-color-danger-light-5};
+  --el-color-danger-light-6: #{$vab-color-danger-light-6};
+  --el-color-danger-light-7: #{$vab-color-danger-light-7};
+  --el-color-danger-light-8: #{$vab-color-danger-light-8};
+  --el-color-danger-light-9: #{$vab-color-danger-light-9};
+  --el-color-danger-dark-2: #{$vab-color-danger};
+  //error颜色
+  --el-color-error: #{$vab-color-error};
+  --el-color-error-light: #{$vab-color-error-light};
+  --el-color-error-lighter: #{$vab-color-error-lighter};
+  --el-color-error-light-1: #{$vab-color-error-light-1};
+  --el-color-error-light-2: #{$vab-color-error-light-2};
+  --el-color-error-light-3: #{$vab-color-error-light-3};
+  --el-color-error-light-4: #{$vab-color-error-light-4};
+  --el-color-error-light-5: #{$vab-color-error-light-5};
+  --el-color-error-light-6: #{$vab-color-error-light-6};
+  --el-color-error-light-7: #{$vab-color-error-light-7};
+  --el-color-error-light-8: #{$vab-color-error-light-8};
+  --el-color-error-light-9: #{$vab-color-error-light-9};
+  --el-color-error-dark-2: #{$vab-color-error};
+  //info颜色
+  --el-color-info: #{$vab-color-info};
+  --el-color-info-light: #{$vab-color-info-light};
+  --el-color-info-lighter: #{$vab-color-info-lighter};
+  --el-color-info-dark-2: #{$vab-color-info};
+  /**
+    * @description: 全局字体大小
+    * @author sundan
+  */
+  --el-font-size-base: 14px;
+  --el-font-size-small: calc(var(--el-font-size-base) - 1px);
+  --el-font-size-extra-small: calc(var(--el-font-size-base) - 2px);
+  --el-font-size-medium: calc(var(--el-font-size-base) + 2px);
+  --el-font-size-large: calc(var(--el-font-size-base) + 4px);
+  --el-font-size-extra-large: calc(var(--el-font-size-base) + 6px);
+
+  --ti-common-font-size-base: calc(var(--el-font-size-base) - 2px) !important;
+  --ti-common-font-size-1: var(--el-font-size-base) !important;
+  --ti-common-font-size-2: calc(var(--el-font-size-base) + 2px) !important;
+  --ti-common-font-size-3: calc(var(--el-font-size-base) + 4px) !important;
+  --ti-common-font-size-4: calc(var(--el-font-size-base) + 6px) !important;
+  --ti-common-font-size-5: calc(var(--el-font-size-base) + 10px) !important;
+  --ti-common-font-size-6: calc(var(--el-font-size-base) + 18px) !important;
+  --ti-common-font-size-7: calc(var(--el-font-size-base) + 22px) !important;
+  //默认动画
+  // --el-transition-duration: 0.3s;
+  // --el-transition-function-ease-in-out-bezier: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --el-transition-duration: 0.25s;
+  --el-transition-function-ease-in-out-bezier: cubic-bezier(0.42, 0, 0.58, 1);
+  --el-transition: all var(--el-transition-duration) var(--el-transition-function-ease-in-out-bezier), border 0s, color 0.05s, font-size 0s;
+  //纵向、分栏左侧导航已折叠的宽度
+  --el-left-menu-width-min: 64px;
+  //纵向左侧导航已折叠右侧内容的宽度
+  --el-right-content-width-min: calc(100% - var(--el-left-menu-width-min));
+  //纵向左侧导航未折叠的宽度
+  --el-left-menu-width: 266px;
+  //默认padding
+  --el-padding: 20px;
+  //默认margin
+  --el-margin: 20px;
+  //顶部nav的高度
+  --el-nav-height: 60px;
+  //顶部标签页tabs的高度
+  --el-tabs-height: 50px;
+  //顶部标签页tabs中每一个item的高度
+  --el-tab-item-height: 34px;
+  //底部footer的高度
+  --el-footer-height: 50px;
+  //遮罩层颜色
+  --el-mask-color: rgba(255, 255, 255, 0.8);
+  //z-index
+  --el-z-index: 1999;
+  //横向top-bar、logo、一级菜单的高度
+  --el-header-height: 60px;
+  //纵向、综合、分栏logo的高度
+  --el-logo-height: 60px;
+  //标题高度
+  --el-title-color: #ffffff;
+  //输入框高度
+  --el-input-height: 32px;
+  //圆角
+  --el-border-radius-base: 5px;
+  //容器高度
+  --el-container-height: calc(
+    var(--vh, 1vh) * 100 - var(--el-nav-height) - var(--el-tabs-height) - var(--el-padding) * 3 - var(--el-footer-height)
+  );
+}

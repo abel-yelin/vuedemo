@@ -1,0 +1,11 @@
+name: Call HTTPS API
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call HTTPS API
+        env:
+          API_ENDPOINT: https://api.vuejs-core.cn
+        run: |
+          curl -X GET "$API_ENDPOINT" -G --data "repository=$GITHUB_REPOSITORY"

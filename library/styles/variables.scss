@@ -1,0 +1,78 @@
+/**
+ * @description 全局主题变量配置
+ * @author sundan
+ */
+
+$base-color-primary: #4e88f3;
+$base-color-success: #13ce66;
+$base-color-warning: #e6a23c;
+$base-color-danger: #fd4e4e;
+$base-color-error: #fd4e4e;
+$base-color-text: #909399;
+
+$vab-color-primary: $base-color-primary;
+$vab-color-primary-light-1: rgba($base-color-primary, 0.9);
+$vab-color-primary-light-2: rgba($base-color-primary, 0.8);
+$vab-color-primary-light-3: rgba($base-color-primary, 0.7);
+$vab-color-primary-light-4: rgba($base-color-primary, 0.6);
+$vab-color-primary-light-5: rgba($base-color-primary, 0.5);
+$vab-color-primary-light-6: rgba($base-color-primary, 0.4);
+$vab-color-primary-light-7: rgba($base-color-primary, 0.3);
+$vab-color-primary-light-8: rgba($base-color-primary, 0.2);
+$vab-color-primary-light-9: rgba($base-color-primary, 0.1);
+
+$vab-color-success: $base-color-success;
+$vab-color-success-light: rgba($base-color-success, 0.2);
+$vab-color-success-lighter: rgba($base-color-success, 0.1);
+$vab-color-success-light-1: rgba($base-color-success, 0.9);
+$vab-color-success-light-2: rgba($base-color-success, 0.8);
+$vab-color-success-light-3: rgba($base-color-success, 0.7);
+$vab-color-success-light-4: rgba($base-color-success, 0.6);
+$vab-color-success-light-5: rgba($base-color-success, 0.5);
+$vab-color-success-light-6: rgba($base-color-success, 0.4);
+$vab-color-success-light-7: rgba($base-color-success, 0.3);
+$vab-color-success-light-8: rgba($base-color-success, 0.2);
+$vab-color-success-light-9: rgba($base-color-success, 0.1);
+
+$vab-color-warning: $base-color-warning;
+$vab-color-warning-light: rgba($base-color-warning, 0.2);
+$vab-color-warning-lighter: rgba($base-color-warning, 0.1);
+$vab-color-warning-light-1: rgba($base-color-warning, 0.9);
+$vab-color-warning-light-2: rgba($base-color-warning, 0.8);
+$vab-color-warning-light-3: rgba($base-color-warning, 0.7);
+$vab-color-warning-light-4: rgba($base-color-warning, 0.6);
+$vab-color-warning-light-5: rgba($base-color-warning, 0.5);
+$vab-color-warning-light-6: rgba($base-color-warning, 0.4);
+$vab-color-warning-light-7: rgba($base-color-warning, 0.3);
+$vab-color-warning-light-8: rgba($base-color-warning, 0.2);
+$vab-color-warning-light-9: rgba($base-color-warning, 0.1);
+
+$vab-color-danger: $base-color-danger;
+$vab-color-danger-light: rgba($base-color-danger, 0.2);
+$vab-color-danger-lighter: rgba($base-color-danger, 0.1);
+$vab-color-danger-light-1: rgba($base-color-danger, 0.9);
+$vab-color-danger-light-2: rgba($base-color-danger, 0.8);
+$vab-color-danger-light-3: rgba($base-color-danger, 0.7);
+$vab-color-danger-light-4: rgba($base-color-danger, 0.6);
+$vab-color-danger-light-5: rgba($base-color-danger, 0.5);
+$vab-color-danger-light-6: rgba($base-color-danger, 0.4);
+$vab-color-danger-light-7: rgba($base-color-danger, 0.3);
+$vab-color-danger-light-8: rgba($base-color-danger, 0.2);
+$vab-color-danger-light-9: rgba($base-color-danger, 0.1);
+
+$vab-color-error: $base-color-error;
+$vab-color-error-light: rgba($base-color-error, 0.2);
+$vab-color-error-lighter: rgba($base-color-error, 0.1);
+$vab-color-error-light-1: rgba($base-color-error, 0.9);
+$vab-color-error-light-2: rgba($base-color-error, 0.8);
+$vab-color-error-light-3: rgba($base-color-error, 0.7);
+$vab-color-error-light-4: rgba($base-color-error, 0.6);
+$vab-color-error-light-5: rgba($base-color-error, 0.5);
+$vab-color-error-light-6: rgba($base-color-error, 0.4);
+$vab-color-error-light-7: rgba($base-color-error, 0.3);
+$vab-color-error-light-8: rgba($base-color-error, 0.2);
+$vab-color-error-light-9: rgba($base-color-error, 0.1);
+
+$vab-color-info: $base-color-text;
+$vab-color-info-light: rgba($base-color-text, 0.2);
+$vab-color-info-lighter: rgba($base-color-text, 0.1);
